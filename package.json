@@ -1,0 +1,33 @@
+{
+  "name": "milepact-cofounder-contract-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1",
+    "start": "npm run dev",
+    "prestart": "node --input-type=commonjs -e \"require('fs').rmSync('client/.next',{recursive:true,force:true})\"",
+    "build": "next build",
+    "contracts:build": "cd contracts && PATH=$HOME/.foundry/bin:$PATH forge build",
+    "contracts:test": "cd contracts && PATH=$HOME/.foundry/bin:$PATH forge test",
+    "contracts:deploy:local": "cd contracts && PATH=$HOME/.foundry/bin:$PATH forge script script/DeployLocal.s.sol:DeployLocalScript --rpc-url http://127.0.0.1:8545 --broadcast",
+    "local:chain": "PATH=$HOME/.foundry/bin:$PATH anvil --host 127.0.0.1 --port 8545"
+  },
+  "dependencies": {
+    "next": "^15.4.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "viem": "^2.21.40"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.4.6",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "tailwind-motionkit": "^1.0.3",
+    "typescript": "^5.6.3"
+  }
+}
