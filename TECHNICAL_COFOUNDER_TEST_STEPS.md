@@ -35,7 +35,6 @@ You receive the `milepact-cofounder-contract-test` repository containing:
 - Do not replace the project with a different stack.
 - Do not remove the local Anvil workflow.
 - Do not commit generated artifacts such as `.next`, `node_modules`, Foundry cache, broadcast output, or contract build output.
-- Do not add proprietary code from a current or former employer.
 - Keep the project runnable by a reviewer using only local commands.
 
 ## Baseline Setup
@@ -145,16 +144,24 @@ Dashboard improvements are welcome when they make the escrow flow safer or clear
 
 Avoid large visual redesigns or unrelated product pages.
 
-## Deliverables
+## Pull Request Deliverable
 
-Submit a repository or patch containing:
+Submit your work as a pull request against the provided repository.
+
+Use a clear branch name, for example:
+
+```text
+cofounder-test/your-name
+```
+
+Your PR should contain:
 
 - Your code changes
 - Updated or added tests
 - A working local dashboard build
-- A short `SUBMISSION_NOTES.txt` file, or README updates, explaining your findings and verification steps
+- A clear PR description explaining your findings and verification steps
 
-Your notes should include:
+In the PR description, include:
 
 - The problems you found, ordered by severity
 - The fixes you made
@@ -162,7 +169,7 @@ Your notes should include:
 - Any issues you intentionally did not fix because of time or scope
 - Any product/security tradeoffs you would discuss before production launch
 
-Do not rely on a new markdown file other than `README.md`; the project intentionally ignores extra markdown files.
+You may also update `README.md` if the local flow changes. Do not rely on a new markdown file other than `README.md`; the project intentionally ignores extra markdown files.
 
 ## Verification Commands
 
@@ -180,7 +187,7 @@ A strong final state has:
 - Passing dashboard build
 - No generated artifacts staged
 - No `.env` files
-- Clear submission notes
+- Clear PR description
 
 ## What We Evaluate
 
