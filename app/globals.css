@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --ink: #f5f7ef;
+  --muted: #9aa89b;
+  --panel: rgba(8, 13, 11, 0.78);
+  --line: rgba(245, 247, 239, 0.13);
+  --mint: #56f0c8;
+  --lime: #d7f58a;
+  --amber: #f5ba63;
+  --red: #ff6b7a;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(90deg, rgba(245, 247, 239, 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(245, 247, 239, 0.035) 1px, transparent 1px),
+    radial-gradient(900px 520px at 78% -8%, rgba(86, 240, 200, 0.18), transparent 60%),
+    linear-gradient(145deg, #060807 0%, #101712 48%, #171b18 100%);
+  background-size: 44px 44px, 44px 44px, auto, auto;
+  color: var(--ink);
+  font-family: "Sora", "Aptos", "Segoe UI", sans-serif;
+}
+
+.panel {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: 0 24px 60px -38px rgba(0, 0, 0, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.045);
+}
+
+.input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.28);
+  padding: 0.68rem 0.78rem;
+  color: var(--ink);
+  outline: none;
+}
+
+.input:focus {
+  border-color: rgba(86, 240, 200, 0.7);
+  box-shadow: 0 0 0 3px rgba(86, 240, 200, 0.14);
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 0.68rem 0.9rem;
+  font-weight: 800;
+  transition: 160ms ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--mint), var(--lime));
+  color: #07100c;
+}
+
+.btn-primary:hover {
+  filter: brightness(0.94);
+}
+
+.btn-outline {
+  border: 1px solid var(--line);
+  background: rgba(245, 247, 239, 0.055);
+  color: var(--ink);
+}
+
+.btn-outline:hover {
+  border-color: rgba(86, 240, 200, 0.42);
+  background: rgba(86, 240, 200, 0.075);
+}
+
+.kicker {
+  color: #b7ffe9;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.chip {
+  border-radius: 7px;
+  border: 1px solid var(--line);
+  background: rgba(245, 247, 239, 0.055);
+  padding: 0.34rem 0.5rem;
+  color: #dfe9dc;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
