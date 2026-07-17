@@ -30,7 +30,6 @@ contracts/.env
 *.key
 *.p12
 *.pfx
-package-lock.json
 
 # Logs and diagnostics
 logs/
