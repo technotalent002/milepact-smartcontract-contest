@@ -30,6 +30,7 @@ contracts/.env
 *.key
 *.p12
 *.pfx
+package-lock.json
 
 # Logs and diagnostics
 logs/
@@ -63,3 +64,4 @@ pm2.log
 # Project policy: keep README only
 *.md
 !/README.md
+!/TECHNICAL_COFOUNDER_TEST_STEPS.md

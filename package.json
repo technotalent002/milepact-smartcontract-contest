@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 127.0.0.1",
+    "dev": "next dev",
     "start": "npm run dev",
     "prestart": "node --input-type=commonjs -e \"require('fs').rmSync('client/.next',{recursive:true,force:true})\"",
     "build": "next build",
@@ -13,7 +13,7 @@
     "local:chain": "PATH=$HOME/.foundry/bin:$PATH anvil --host 127.0.0.1 --port 8545"
   },
   "dependencies": {
-    "next": "^15.4.6",
+    "next": "^16.2.10",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "viem": "^2.21.40"
